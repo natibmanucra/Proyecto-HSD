@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f1ba873a;
+    width: 100%;
+}
+
+h1{
+    color: #5d675b;
+    font-size: 2.5rem;
+    font-family: 'Source Serif Pro', serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #5d675b;
+}
+
+/* items del menu */
+   
+#menu ul li{
+    background-color: #F1BB87;
+    position: relative;
+    float: left;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+} 
+
+/* enlaces del menu */
+
+#menu ul a{
+    display: block;
+    color: #5D675B;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+   
+/* efecto al pasar el ratón por los items del menu */
+   
+#menu ul li:hover{
+    background-color: #F7EF99;
+}
+
+/* menu desplegable */
+
+#menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+   
+/* items del menu desplegable */
+   
+#menu ul ul li{
+   float: none;
+   width: 10rem;
+   margin: 0.5rem;
+}
+   
+/* enlaces de los items del menu desplegable */
+   
+#menu ul ul a{
+    line-height: 120%;
+    padding: 10px 15px;
+}
+   
+/* items del menu desplegable al pasar el ratón */
+   
+#menu ul li:hover > ul{
+    display: block;
+}
+
+/* imagen principal y texto del index */
+
+img{
+    width: 100%;
+}
+
+.txtPrincipal{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    color: #5d675b;
+    padding: 0.5rem;
+}
+
+/* Sección Articulos */
+
+.articulos{
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.8rem;
+    border: 5px solid #F78E69;
+    width: 16rem;
+    height: 16rem;
+    text-align: center; 
+}
+
+/* Footer */
+
+footer{
+    background-color: #abe18869;
+}
+
+.letraYColor{
+    color: #5d675b;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+.casilla{
+    color: #5d675b;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.iconoRedes{
+    color: #F78E69;
+    font-size: 2.2rem;
+    padding: 0.5rem;
+}
+
+.botonUp{
+    color: #F78E69;
+    font-size: 40px;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.botonUp i:hover{
+    color: #5D675B;
+}
+
+/* Living Room */
+
+.mainSec{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.8rem;
+    color: #5d675b;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.tamanoLetra{
+    font-size: 1rem;
+}
+
+/* Subtitulos Decor */
+
+.subt{
+    font-family: 'Manrope', sans-serif;
+    color: #5d675b;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* ----- APLICANDO GRID+FLEX ----- */
+
+header{
+    background-color: #f78f6948;
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.mainIndex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.sectionIndex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mainSec{
+    display: flex;
+    flex-direction: column;
+}
+
+.galerias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    justify-items: center;
+}
+
+.galeriaDeco{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 0.5fr 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "candles candles candles candles"
+    "img1 img2 img3 img4"
+    "mirrors mirrors mirrors mirrors"
+    "img5 img6 img7 img8"
+    "centerpieces centerpieces centerpieces centerpieces"
+    "img9 img10 img11 img12"
+    "indoorPlants indoorPlants indoorPlants indoorPlants"
+    "img13 img14 img15 img16";
+}
+
+.candles{
+    grid-area: candles;
+}
+
+.img1{
+    grid-area: img1;
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+.img4{
+    grid-area: img4;
+}
+
+.mirrors{
+    grid-area: mirrors;
+}
+
+.img5{
+    grid-area: img5;
+}
+
+.img6{
+    grid-area: img6;
+}
+
+.img7{
+    grid-area: img7;
+}
+
+.img8{
+    grid-area: img8;
+}
+
+.centerpieces{
+    grid-area: centerpieces;
+}
+
+.img9{
+    grid-area: img9;
+}
+
+.img10{
+    grid-area: img10;
+}
+
+.img11{
+    grid-area: img11;
+}
+
+.img12{
+    grid-area: img12;
+}
+
+.indoorPlants{
+    grid-area: indoorPlants;
+}
+
+.img13{
+    grid-area: img13;
+}
+
+.img14{
+    grid-area: img14;
+}
+
+.img15{
+    grid-area: img15;
+}
+
+.img16{
+    grid-area: img16;
+}
+
+/* ------ MEDIA QUERIES ------ */
+
+@media screen and (max-width: 768px){
+    
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .articulos{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .letraYColor{
+        font-size: 1.2rem;
+    }
+
+    .casilla{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+    
+    .iconoRedes{
+        font-size: 1.6rem;
+    }
+
+    .botonUp{
+        font-size: 30px;
+    }
+
+    .mainSec h3{
+        font-size: 1.5rem;
+    }
+
+    .galerias{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .galeriaDeco{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr;
+        overflow: hidden;
+        grid-template-areas: 
+        "candles candles"
+        "img1 img2"
+        "img3 img4"
+        "mirrors mirrors"
+        "img5 img6"
+        "img7 img8"
+        "centerpieces centerpieces"
+        "img9 img10"
+        "img11 img12"
+        "indoorPlants indoorPlants"
+        "img13 img14"
+        "img15 img16";
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    
+    h1{
+        font-size: 1.6rem;
+    }
+
+    #menu ul a{
+        line-height: 80%;
+        font-size: 0.8rem;
+    }
+
+    .articulos{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .letraYColor{
+        font-size: 1rem;
+    }
+
+    .casilla{
+        font-size: 0.8rem;
+    }
+    
+    .iconoRedes{
+        font-size: 1.8rem;
+    }
+
+    .botonUp{
+        font-size: 30px;
+    }
+
+    .mainSec h3{
+        font-size: 1.3rem;
+    }
+
+    .galerias{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+}
+
