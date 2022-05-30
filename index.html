@@ -11,11 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&family=Source+Serif+Pro&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5dd166d683.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header id="top">
-        <h1>HOME STUDIO DESING</h1>
+        <h1 class="animate__animated animate__fadeInLeft">HOME STUDIO DESING</h1>
     </header>
     
     <nav id="menu">
@@ -48,22 +50,24 @@
     </nav>
 
     <main class="mainIndex">
+        
         <p class="txtPrincipal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sit voluptatibus dignissimos quam delectus. Deleniti odit vero autem fuga nostrum consectetur animi, consequuntur minima! Reiciendis amet repellat ullam facilis harum quas libero enim earum quia quibusdam ipsum tempora corporis doloremque architecto dolorem totam eligendi ad similique, praesentium magni aliquam soluta itaque voluptatum officia? Optio exercitationem autem ex voluptatem iusto quibusdam incidunt vero tempore eum ipsa blanditiis officiis eius, iste esse culpa sequi! Sunt dolore, officia blanditiis necessitatibus aperiam commodi officiis ipsum praesentium minima, explicabo qui mollitia eos in laudantium facilis. Veniam minus illo ad provident, fugiat dicta assumenda quam maiores.</p>  
-        <img src="./images/img-principal.jpg" alt="Living moderno">
+        <img src="./images/img-principal.jpg" alt="Living moderno"> 
+        
     </main>
 
     <section class="sectionIndex">
-        <div class="articulos">
+        <div data-aos="zoom-in-right" class="articulos">
             <article>
                 <a href="https://proyectos.habitissimo.es/proyecto/techos-transparentes-deja-que-la-luz-natural-entre-en-casa">Illumination</a>
             </article>
         </div>
-       <div class="articulos">
+       <div data-aos="zoom-in" class="articulos">
            <article>
              <a href="https://annachurchart.com/updatesnews/2021/5/11/spring-revival-give-your-home-an-eco-friendly-interior-design-makeover">Sustainable Design</a>
            </article>
        </div>
-        <div class="articulos">
+        <div data-aos="zoom-in-left" class="articulos">
             <article>
                 <a href="https://blog.mytastefulspace.com/2020/04/01/tall-indoor-plants/">Indoor Plants</a>
             </article>
@@ -78,7 +82,7 @@
             <form class="casilla">
                 <label for="Email">Leave us your email and you will receive all the interior design news</label>
                 <input type="email" id="email" placeholder="Email" required> 
-                <button type="submit">Send</button>
+                <button type="submit" class="botonSend">Send</button>
             </form>
         </div>
         <div>
@@ -87,6 +91,11 @@
             <a class="iconoRedes" href=""><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <a class="botonUp" href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
 </body>

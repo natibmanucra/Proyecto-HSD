@@ -105,6 +105,7 @@ img{
     font-family: 'Manrope', sans-serif;
     font-size: 0.8rem;
     border: 5px solid #F78E69;
+    border-radius: 10%;
     width: 16rem;
     height: 16rem;
     text-align: center; 
@@ -113,7 +114,13 @@ img{
 /* Footer */
 
 footer{
-    background-color: #abe18869;
+    background: rgb(202,218,101);
+    background: linear-gradient(90deg, rgba(202,218,101,0.8046568969384629) 0%, rgba(171,225,136,0.846673703661152) 50%, rgba(202,218,101,0.7990546560421043) 100%);
+}
+
+.botonSend:hover{
+    transform: scale(1.5) translateX(10px);
+    transition: all 1.5s ease-out;
 }
 
 .letraYColor{
@@ -151,6 +158,8 @@ footer{
 /* Living Room */
 
 .mainSec{
+    display: flex;
+    flex-direction: column;
     font-family: 'Manrope', sans-serif;
     font-size: 1.8rem;
     color: #5d675b;
@@ -176,7 +185,8 @@ footer{
 /* ----- APLICANDO GRID+FLEX ----- */
 
 header{
-    background-color: #f78f6948;
+    background: rgb(231,161,137);
+    background: linear-gradient(90deg, rgba(231,161,137,0.5973739837731968) 0%, rgba(247,142,105,0.7010154403558299) 50%, rgba(231,161,137,0.5973739837731968) 100%);
     display: flex;
     justify-content: center;
     padding: 1.2rem;
@@ -194,7 +204,7 @@ nav ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
 }
 
 .sectionIndex{
@@ -211,11 +221,6 @@ footer{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-}
-
-.mainSec{
-    display: flex;
-    flex-direction: column;
 }
 
 .galerias{
