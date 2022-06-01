@@ -12,6 +12,7 @@ body{
 h1{
     color: #5d675b;
     font-size: 2.5rem;
+    font-weight: bold;
     font-family: 'Source Serif Pro', serif;
 }
 
@@ -85,30 +86,15 @@ a{
     display: block;
 }
 
-/* imagen principal y texto del index */
-
-img{
-    width: 100%;
-}
+/* texto del index */
 
 .txtPrincipal{
     font-family: 'Manrope', sans-serif;
     font-size: 1rem;
     color: #5d675b;
-    padding: 0.5rem;
-}
-
-/* Sección Articulos */
-
-.articulos{
-    text-transform: uppercase;
-    font-family: 'Manrope', sans-serif;
-    font-size: 0.8rem;
-    border: 5px solid #F78E69;
-    border-radius: 10%;
-    width: 16rem;
-    height: 16rem;
-    text-align: center; 
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0 auto;
 }
 
 /* Footer */
@@ -199,19 +185,10 @@ nav ul{
     padding: 1rem;
 }
 
-.mainIndex{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-}
-
 .sectionIndex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
     padding-bottom: 1.5rem;
 }
 
@@ -329,17 +306,33 @@ footer{
     grid-area: img16;
 }
 
+.carousel-mod{
+    margin: 0 auto;
+    padding-bottom: 1.8rem;
+}
+
+.card-mod{
+    border: 1px solid #F78E69;
+}
+
+.tipo-modificada{
+    font-family: 'Manrope', sans-serif;
+    color: #5d675b
+}
+
+.btn-mod{
+    font-family: 'Manrope', sans-serif;
+    color: #5d675b;
+    background-color: #F1BB87;
+    border-color: #F1BB87;
+}
+
 /* ------ MEDIA QUERIES ------ */
 
 @media screen and (max-width: 768px){
     
     h1{
         font-size: 1.8rem;
-    }
-
-    .articulos{
-        width: 10rem;
-        height: 10rem;
     }
 
     .letraYColor{
@@ -402,11 +395,6 @@ footer{
         font-size: 0.8rem;
     }
 
-    .articulos{
-        width: 6rem;
-        height: 6rem;
-    }
-
     .letraYColor{
         font-size: 1rem;
     }
@@ -432,4 +420,3 @@ footer{
         grid-template-rows: repeat(9, 1fr);
     }
 }
-
