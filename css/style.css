@@ -25,6 +25,10 @@ a{
     color: #5d675b;
 }
 
+img{
+    width: 100%;
+}
+
 /* items del menu */
    
 #menu ul li{
@@ -149,7 +153,7 @@ footer{
     font-family: 'Manrope', sans-serif;
     font-size: 1.8rem;
     color: #5d675b;
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
 }
 
 .tamanoLetra{
@@ -200,6 +204,7 @@ footer{
     justify-content: space-evenly;
 }
 
+
 .galerias{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -207,7 +212,7 @@ footer{
     grid-gap: 1rem;
     padding: 1rem;
     justify-items: center;
-}
+} 
 
 .galeriaDeco{
     display: grid;
@@ -306,6 +311,8 @@ footer{
     grid-area: img16;
 }
 
+/* ---- BOOTSTRAP ---- */
+
 .carousel-mod{
     margin: 0 auto;
     padding-bottom: 1.8rem;
@@ -327,10 +334,54 @@ footer{
     border-color: #F1BB87;
 }
 
+.navBar-mod{
+    display: none;
+    background-color: #abe1883e;
+    font-family: 'Manrope', sans-serif;
+}
+
+.color-mod{
+    color: #5d675b; 
+}
+
+.color-mod.show{
+    color: #5d675b;
+}
+
+.nav-link:hover {
+    color: #5d675b !important;
+}
+
+.color-mod:active{
+    background-color: #F7EF99;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.bar-mod{
+    color: #5d675b;
+}
+
+.containerSection{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+}
+
 /* ------ MEDIA QUERIES ------ */
 
 @media screen and (max-width: 768px){
-    
+
+    .navDesktop{
+        display: none;
+    }
+
+    .navBar-mod{
+        display: block;
+    }
+
     h1{
         font-size: 1.8rem;
     }
@@ -380,8 +431,8 @@ footer{
         "indoorPlants indoorPlants"
         "img13 img14"
         "img15 img16";
-    }
-}
+    } 
+} 
 
 
 @media screen and (max-width: 480px){
