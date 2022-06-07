@@ -133,6 +133,10 @@ footer{
     padding: 0.5rem;
 }
 
+.iconoRedes:hover{
+    color: #5D675B;
+}
+
 .botonUp{
     color: #F78E69;
     font-size: 40px;
@@ -456,10 +460,6 @@ footer{
     
     .iconoRedes{
         font-size: 1.8rem;
-    }
-
-    .botonUp{
-        font-size: 30px;
     }
 
     .mainSec h3{
